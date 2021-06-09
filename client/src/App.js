@@ -33,7 +33,6 @@ function App() {
     const fullUrl = `${config.base_api_url}${config.addresses_path}?size=${size}`;
 
     if (addresses.data) {
-      setUrl(fullUrl);
       refetch();
     } else {
       setUrl(fullUrl);
